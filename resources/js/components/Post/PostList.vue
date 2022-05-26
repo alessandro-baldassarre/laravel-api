@@ -1,17 +1,16 @@
 <template>
-    <div class="container-fluid">
-        <PostList/>
-        ciao
+    <div>
+        <Post/>
     </div>
 </template>
 
 <script>
 
-import PostList from '../components/Post/PostList';
+import Post from './Post';
 export default {
     name: "App",
     components: {
-        PostList
+        Post
     }
 }
 </script>
