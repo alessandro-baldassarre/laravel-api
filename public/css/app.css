@@ -21327,41 +21327,45 @@ span.tag-color {
   border-radius: 100%;
 }
 
-header.guest-home {
-  height: 60px;
-  background-color: #fff;
-  color: #636b6f;
+div.guest-home-container {
+  background-color: black;
+}
+
+div.guest-home-container header.guest-home {
+  height: 80px;
+  color: white;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   margin: 0;
+  padding-top: 20px;
 }
 
-header.guest-home .flex-center {
+div.guest-home-container header.guest-home .flex-center {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-header.guest-home .position-ref {
+div.guest-home-container header.guest-home .position-ref {
   position: relative;
 }
 
-header.guest-home .top-right {
+div.guest-home-container header.guest-home .top-right {
   position: absolute;
   right: 10px;
-  top: 18px;
+  top: 38px;
 }
 
-header.guest-home .content {
+div.guest-home-container header.guest-home .content {
   text-align: center;
 }
 
-header.guest-home .title {
+div.guest-home-container header.guest-home .title {
   font-size: 84px;
 }
 
-header.guest-home .links > a {
-  color: #636b6f;
+div.guest-home-container header.guest-home .links > a {
+  color: white;
   padding: 0 25px;
   font-size: 13px;
   font-weight: 600;
@@ -21370,7 +21374,7 @@ header.guest-home .links > a {
   text-transform: uppercase;
 }
 
-header.guest-home .m-b-md {
+div.guest-home-container header.guest-home .m-b-md {
   margin-bottom: 30px;
 }
 
