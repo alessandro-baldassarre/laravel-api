@@ -1941,6 +1941,23 @@ __webpack_require__.r(__webpack_exports__);
   name: "App",
   components: {
     Post: _Post__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      posts: []
+    };
+  },
+  methods: {
+    getPosts: function getPosts() {
+      var apiUrl = 'http://localhost:8000/api/posts';
+      axios.get(apiUrl).then(function (results) {
+        // this.posts = results.data;
+        console.log(results.data.data);
+      });
+    }
+  },
+  created: function created() {
+    this.getPosts();
   }
 });
 
@@ -1956,7 +1973,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Post_PostList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Post/PostList */ "./resources/js/components/Post/PostList.vue");
-//
 //
 //
 //
@@ -2504,12 +2520,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container-fluid" },
-    [_c("PostList"), _vm._v("\n    ciao\n")],
-    1
-  )
+  return _c("div", { staticClass: "container-fluid" }, [_c("PostList")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true

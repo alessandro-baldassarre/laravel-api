@@ -1,7 +1,6 @@
 <template>
     <div class="container-fluid">
         <PostList/>
-        ciao
     </div>
 </template>
 
